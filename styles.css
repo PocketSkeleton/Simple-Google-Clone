@@ -108,3 +108,7 @@ form {
   width: 24px;
   line-height: 44px;
 }
+
+input:focus::placeholder {
+  color: transparent;
+}
