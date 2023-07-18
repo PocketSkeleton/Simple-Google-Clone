@@ -113,11 +113,12 @@ input:focus::placeholder {
   color: transparent;
 }
 
-#answerBox {
+.answerBox {
   margin: auto auto;
+  width: 600px;
 }
 
-#title {
+.title {
   margin-top: 5px;
   color: #1a0dab;
   font-size: 20px;
@@ -125,7 +126,7 @@ input:focus::placeholder {
   margin-bottom: 3px;
 }
 
-#titleUrl {
+.titleUrl {
   font-size: 12px;
   line-height: 18px;
   color: #4d5156;
@@ -133,11 +134,11 @@ input:focus::placeholder {
   margin-bottom: 0;
 }
 
-#titleLink {
+.titleLink {
   text-decoration: none;
 }
 
-#snippet {
+.snippet {
   color: #4d5156;
   margin-top: 0;
   text-overflow: clip;
