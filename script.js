@@ -1,3 +1,4 @@
+const key = 'live_h2b7kch1OaMTzt0xZAbNjISsxub22E2GMZltE0dfyEuhe292LDCOIpNyDsJ6NbLL'
 const options = {
 	method: 'GET',
 	headers: {
@@ -5,6 +6,15 @@ const options = {
 		'X-RapidAPI-Host': 'google-search72.p.rapidapi.com'
 	}
 };
+
+function catfunc() {
+    fetch('https://api.thecatapi.com/v1/images/search', {method: 'GET','x-api-key': key})
+        .then(response => response.json())
+        .then(response => {
+            document.getElementById("catPhoto").src = response[0]['url'];
+            console.log('new image');
+        })
+}
 
 function myfunc(search) {
     let url = 'https://google-search72.p.rapidapi.com/search?q=' + encodeURI(search) + '&num=1&start=0';
@@ -23,4 +33,8 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     event.preventDefault();
     myfunc(document.getElementById("search").value);
     document.getElementById("search").value = '';
+})
+
+document.getElementById("button2").addEventListener("click", function() {
+    catfunc();
 })
