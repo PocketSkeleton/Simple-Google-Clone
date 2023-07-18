@@ -3,7 +3,7 @@ const key = 'live_h2b7kch1OaMTzt0xZAbNjISsxub22E2GMZltE0dfyEuhe292LDCOIpNyDsJ6Nb
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '685239185amsh9e51d5ddd36e754p116dc1jsn81fe160acd17',
+		'X-RapidAPI-Key': '531dcd1197msh8936d02515afaddp153462jsn17c197065bff',
 		'X-RapidAPI-Host': 'google-search72.p.rapidapi.com'
 	}
 };
